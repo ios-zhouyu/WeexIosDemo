@@ -1,0 +1,27 @@
+platform :ios, '9.0'
+
+target 'WeexIosDemo' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for WeexIosDemo
+
+  pod 'WeexSDK'
+  pod 'Masonry'
+  pod 'SDWebImage'
+  pod 'JLRoutes'
+  pod 'SocketRocket'
+  pod  'WXDevtool', :configurations => ['Debug']
+
+
+  target 'WeexIosDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'WeexIosDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

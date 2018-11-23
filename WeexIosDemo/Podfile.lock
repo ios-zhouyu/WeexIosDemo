@@ -1,0 +1,40 @@
+PODS:
+  - JLRoutes (2.1)
+  - Masonry (1.1.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SocketRocket (0.5.1)
+  - WeexSDK (0.18.0.3)
+  - WXDevtool (0.16.3):
+    - SocketRocket
+    - WeexSDK
+
+DEPENDENCIES:
+  - JLRoutes
+  - Masonry
+  - SDWebImage
+  - SocketRocket
+  - WeexSDK
+  - WXDevtool
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JLRoutes
+    - Masonry
+    - SDWebImage
+    - SocketRocket
+    - WeexSDK
+    - WXDevtool
+
+SPEC CHECKSUMS:
+  JLRoutes: d755245322b94227662ea3e43492fdca94e05c5b
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  WeexSDK: 173541f2d0042664168b305952398145c0c6039c
+  WXDevtool: c028138b4e3a8856758acfea2328f708d3adbedd
+
+PODFILE CHECKSUM: 35bdce75d977a34107f74970c7f0c27d2db76420
+
+COCOAPODS: 1.5.3
