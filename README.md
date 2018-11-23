@@ -2,6 +2,9 @@
 WeexIosDemo
 
 
-###
+### 示例
 
-<image source="./Docs/weex.gif">
+
+<p>
+   <image source='./Docs/weex.gif'>
+</p>
