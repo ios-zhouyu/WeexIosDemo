@@ -143,19 +143,13 @@
 		623AC7A021A7D08D003C0139 /* WeexIosDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6259484521AD8206005760B3 /* AppDelegate */,
 				62626C1921AD63D60098F506 /* WeexCenter */,
 				62626C1121AD5FC30098F506 /* WeexScanner */,
 				62626C0A21AD5F330098F506 /* WeexConfig */,
 				62626C0921AD5BF70098F506 /* WeexJS */,
 				62626C0821AD5BD10098F506 /* NaviveController */,
-				623AC7A121A7D08D003C0139 /* AppDelegate.h */,
-				623AC7A221A7D08D003C0139 /* AppDelegate.m */,
-				62626C1821AD5FE90098F506 /* DemoDefine.h */,
-				623AC7A721A7D08D003C0139 /* Main.storyboard */,
-				623AC7AA21A7D08E003C0139 /* Assets.xcassets */,
-				623AC7AC21A7D08E003C0139 /* LaunchScreen.storyboard */,
-				623AC7AF21A7D08E003C0139 /* Info.plist */,
-				623AC7B021A7D08E003C0139 /* main.m */,
+				6259484421AD81B5005760B3 /* Source */,
 			);
 			path = WeexIosDemo;
 			sourceTree = "<group>";
@@ -176,6 +170,28 @@
 				623AC7C721A7D08E003C0139 /* Info.plist */,
 			);
 			path = WeexIosDemoUITests;
+			sourceTree = "<group>";
+		};
+		6259484421AD81B5005760B3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				623AC7A721A7D08D003C0139 /* Main.storyboard */,
+				623AC7AA21A7D08E003C0139 /* Assets.xcassets */,
+				623AC7AC21A7D08E003C0139 /* LaunchScreen.storyboard */,
+				623AC7AF21A7D08E003C0139 /* Info.plist */,
+				623AC7B021A7D08E003C0139 /* main.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		6259484521AD8206005760B3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				623AC7A121A7D08D003C0139 /* AppDelegate.h */,
+				623AC7A221A7D08D003C0139 /* AppDelegate.m */,
+				62626C1821AD5FE90098F506 /* DemoDefine.h */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		62626C0821AD5BD10098F506 /* NaviveController */ = {
