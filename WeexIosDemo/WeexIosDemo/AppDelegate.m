@@ -12,11 +12,8 @@
  */
 
 #import "AppDelegate.h"
-#import <WeexSDK/WeexSDK.h>
-#import <WeexSDK/WXSDKEngine.h>
-#import <WeexSDK/WXLog.h>
 #import <WeexSDK/WXDebugTool.h>
-#import <WeexSDK/WXAppConfiguration.h>
+#import "WeexSDKManager.h"
 
 @interface AppDelegate ()
 
@@ -27,24 +24,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //业务配置，非必需
-    [WXAppConfiguration setAppGroup:@"AliApp"];
-    [WXAppConfiguration setAppName:@"WeexIosDemo"];
-    [WXAppConfiguration setAppVersion:@"1.0.0"];
-    
-    //初始化SDK环境
-    [WXSDKEngine initSDKEnvironment];
-    
-    //注册自定义module和component，非必需
-//    [WXSDKEngine registerComponent:@"MyView" withClass:[MyViewComponent class]];
-//    [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
-//    
-//    //注册协议的实现类，非必需
-//    [WXSDKEngine registerHandler:[WXNavigationDefaultImpl new] withProtocol:@protocol(WXNavigationProtocol)];
-    
-    //设置Log输出等级：调试环境默认为Debug，正式发布会自动关闭。
-    [WXLog setLogLevel: WXLogLevelAll];
-    
+    [WeexSDKManager setup];
     
     // 开启debug模式
     [WXDebugTool setDebug:YES];

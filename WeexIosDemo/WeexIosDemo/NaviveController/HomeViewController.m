@@ -10,6 +10,7 @@
 
 #import "HomeViewController.h"
 #import <WeexSDK/WXSDKInstance.h>
+#import <WeexSDK/WeexSDK.h>
 
 @interface HomeViewController ()
 @property (nonatomic, strong) WXSDKInstance * instance;
@@ -38,11 +39,15 @@
     };
     
     self.instance.onFailed = ^(NSError *error) {
-        //process failure
+        WXLogDebug(@"%@", @"Render onFailed...");
     };
     
     self.instance.renderFinish = ^ (UIView *view) {
-        //process renderFinish
+        WXLogDebug(@"%@", @"Render Finish...");
+    };
+    
+    self.instance.updateFinish = ^(UIView *view) {
+        WXLogDebug(@"%@", @"Update Finish...");
     };
     
     self.url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"js"];
