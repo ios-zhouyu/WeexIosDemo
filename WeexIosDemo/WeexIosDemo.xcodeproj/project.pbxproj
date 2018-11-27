@@ -23,6 +23,7 @@
 		623AC7E821A7EDA1003C0139 /* weex.js in Resources */ = {isa = PBXBuildFile; fileRef = 623AC7E521A7EDA1003C0139 /* weex.js */; };
 		623AC7E921A7EDA1003C0139 /* mine.js in Resources */ = {isa = PBXBuildFile; fileRef = 623AC7E621A7EDA1003C0139 /* mine.js */; };
 		623AC7EA21A7EDA1003C0139 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 623AC7E721A7EDA1003C0139 /* index.js */; };
+		6259484C21AD835A005760B3 /* WeexButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6259484B21AD835A005760B3 /* WeexButton.m */; };
 		62626C0F21AD5F340098F506 /* WeexSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62626C0B21AD5F330098F506 /* WeexSDKManager.m */; };
 		62626C1021AD5F340098F506 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62626C0E21AD5F330098F506 /* WXImgLoaderDefaultImpl.m */; };
 		62626C1621AD5FC40098F506 /* UIViewController+WXDemoNaviBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 62626C1321AD5FC30098F506 /* UIViewController+WXDemoNaviBar.m */; };
@@ -73,6 +74,8 @@
 		623AC7E521A7EDA1003C0139 /* weex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = weex.js; sourceTree = "<group>"; };
 		623AC7E621A7EDA1003C0139 /* mine.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mine.js; sourceTree = "<group>"; };
 		623AC7E721A7EDA1003C0139 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		6259484A21AD835A005760B3 /* WeexButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeexButton.h; sourceTree = "<group>"; };
+		6259484B21AD835A005760B3 /* WeexButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeexButton.m; sourceTree = "<group>"; };
 		62626C0B21AD5F330098F506 /* WeexSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexSDKManager.m; sourceTree = "<group>"; };
 		62626C0C21AD5F330098F506 /* WXImgLoaderDefaultImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderDefaultImpl.h; sourceTree = "<group>"; };
 		62626C0D21AD5F330098F506 /* WeexSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexSDKManager.h; sourceTree = "<group>"; };
@@ -194,6 +197,15 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		6259484921AD833F005760B3 /* WeexComponent */ = {
+			isa = PBXGroup;
+			children = (
+				6259484A21AD835A005760B3 /* WeexButton.h */,
+				6259484B21AD835A005760B3 /* WeexButton.m */,
+			);
+			path = WeexComponent;
+			sourceTree = "<group>";
+		};
 		62626C0821AD5BD10098F506 /* NaviveController */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +252,7 @@
 		62626C1921AD63D60098F506 /* WeexCenter */ = {
 			isa = PBXGroup;
 			children = (
-				62626C1C21AD642B0098F506 /* WeexComponent */,
+				6259484921AD833F005760B3 /* WeexComponent */,
 				62626C1B21AD641A0098F506 /* WeexModule */,
 				62626C1A21AD640D0098F506 /* WeexHandler */,
 			);
@@ -261,13 +273,6 @@
 			children = (
 			);
 			path = WeexModule;
-			sourceTree = "<group>";
-		};
-		62626C1C21AD642B0098F506 /* WeexComponent */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WeexComponent;
 			sourceTree = "<group>";
 		};
 		6A2B77DD315CCC765AFE76B1 /* Pods */ = {
@@ -509,6 +514,7 @@
 			files = (
 				62626C1721AD5FC40098F506 /* WXDemoViewController.m in Sources */,
 				623AC7B121A7D08E003C0139 /* main.m in Sources */,
+				6259484C21AD835A005760B3 /* WeexButton.m in Sources */,
 				62626C0F21AD5F340098F506 /* WeexSDKManager.m in Sources */,
 				623AC7D821A7D4FA003C0139 /* MineViewController.m in Sources */,
 				623AC7A321A7D08D003C0139 /* AppDelegate.m in Sources */,

@@ -26,8 +26,6 @@
     
     [WeexSDKManager setup];
     
-    // 开启debug模式
-    [WXDebugTool setDebug:YES];
     return YES;
 }
 

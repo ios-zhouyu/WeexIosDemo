@@ -11,6 +11,7 @@
 #import <WeexSDK/WeexSDK.h>
 #import "WXDemoViewController.h"
 #import "WXImgLoaderDefaultImpl.h"
+#import "WeexButton.h"
 
 @implementation WeexSDKManager
 
@@ -49,15 +50,20 @@
     
     [WXSDKEngine initSDKEnvironment];
     
-    [self registerHandler];
+    [self registerWeexHandlerComponentAndModule];
     
 #ifdef DEBUG
+    [WXDebugTool setDebug:YES];
     [WXLog setLogLevel:WXLogLevelLog];
+#else
+    [WXDebugTool setDebug:NO];
+    [WXLog setLogLevel:WXLogLevelError];
 #endif
 }
 
-+ (void)registerHandler {
++ (void)registerWeexHandlerComponentAndModule {
     [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
+    [WXSDKEngine registerComponent:@"weex-button" withClass:[WeexButton class]];
 }
 
 + (void)loadCustomContainWithScannerWithUrl:(NSURL *)url
