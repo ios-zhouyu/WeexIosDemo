@@ -49,11 +49,15 @@
     
     [WXSDKEngine initSDKEnvironment];
     
-    [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
+    [self registerHandler];
     
 #ifdef DEBUG
     [WXLog setLogLevel:WXLogLevelLog];
 #endif
+}
+
++ (void)registerHandler {
+    [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
 }
 
 + (void)loadCustomContainWithScannerWithUrl:(NSURL *)url
